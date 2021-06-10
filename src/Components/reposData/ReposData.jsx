@@ -6,7 +6,7 @@ import { useWindowScroll } from 'react-use';
 import firebase, {auth} from "../../Firebase/config";
 import {Link, useParams} from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import {useParams} from "react-router-dom";
+
 
 export default function ReposData(props){
   
