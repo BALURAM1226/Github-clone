@@ -9,7 +9,8 @@
   margin: 40px 13px 13px 13px;
 }
 .repo_container:hover {
-  transform: scale(1.1);
+  box-shadow:none;
+  border-bottom:2px solid #d47dff;
 }
 
 .repo_name{
