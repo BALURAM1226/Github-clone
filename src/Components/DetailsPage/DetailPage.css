@@ -1,12 +1,12 @@
 .repo_full_name {
-  margin: 16px;
-  padding-left: 12px;
-  font-size: 20px;
+  margin: 13px;
+  padding-left: 6px;
+  font-size: 14px;
   color: blue;
 }
-.repos_main_name {
+.repo_main_name {
   display: flex;
-  font-size: 40px;
+  font-size: 28px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
 }
 .repos_link {
   display: flex;
-  font-size: 30px;
+  font-size: 14px;
   align-items: center;
   margin-left: 22px
 }
@@ -31,7 +31,7 @@
 }
 .repos_date {
   margin: 10px 10px 10px 22px;
-  font-size: 18px;
+  font-size: 14px;
   color: black;
 }
 
