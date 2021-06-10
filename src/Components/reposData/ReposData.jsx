@@ -32,7 +32,6 @@ export default function ReposData(props){
 
     useEffect(async()=>{
       fetch(`https://api.github.com/users/${props.username}/repos?page=${page}&&per_page=5`).then((res)=>{
-        console.log(res)
         return res.json();
       }).then((data)=>{
         console.log(data)
