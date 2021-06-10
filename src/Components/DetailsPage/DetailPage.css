@@ -1,0 +1,38 @@
+.repo_full_name {
+  margin: 16px;
+  padding-left: 12px;
+  font-size: 20px;
+  color: blue;
+}
+.repo_main_name {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6vh 0 1vh 0;
+}
+.repo_link {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  margin-left: 22px
+}
+.repo_link > a {
+  padding-left: 7px;
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.repo_description  {
+  font-size: 15px;
+  margin: 10px 10px 10px 22px;
+  color: gray;
+}
+.repo_date {
+  margin: 10px 10px 10px 22px;
+  font-size: 18px;
+  color: black;
+}
+
+
