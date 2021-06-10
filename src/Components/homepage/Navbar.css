@@ -1,3 +1,17 @@
+.Homepage_header {
+  background-color: black;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.github_icon {
+  padding: 8px;
+  margin-left: 7.3px;
+  color: white !important;
+  font-size: 70px !important ;
+}
 .user_info {
   width: 100%;
   margin-top: 17px;
