@@ -16,21 +16,18 @@ const history = useHistory();
 
   return(
     <>
-    <div className="Login_page">
-    <div className="page_name">
-     <h1>welcome to Login Page</h1>
-    </div>
-
-    <div className="signIn_btn_div">
-
-    <span className="signIn_btn" onClick={githubSignIn}>
-      SignIn With Github
-     <GitHubIcon className="github_logo" />
-     </span>
-    </div>
-    </div>
- 
-    </>
+<div className="Login_page">
+   <div className="page_name">
+      <h1>welcome to Login Page</h1>
+   </div>
+   <div className="signIn_btn_div">
+      <span className="signIn_btn" onClick={githubSignIn}>
+         SignIn With Github
+         <GitHubIcon className="github_logo" />
+      </span>
+   </div>
+</div>
+</>
 
   )
 }
