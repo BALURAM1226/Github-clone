@@ -40,18 +40,18 @@ export default function Homepage(){
 
   return(
     <>
- {   user ?
-    <div>
-    <Navbar 
-    username={username} 
-    userpic={userPic}
-    />
-    <ReposData username={username} />
-    </div>:
-    <div>
-  <Loginpage githubSignIn={githubSignIn} />
-  </div> }
-    
-    </>
-  )
+{   user ?
+<div>
+   <Navbar 
+      username={username} 
+      userpic={userPic}
+      />
+   <ReposData username={username} />
+</div>
+:
+<div>
+   <Loginpage githubSignIn={githubSignIn} />
+</div>
+}
+</>
 }
