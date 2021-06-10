@@ -5,14 +5,12 @@ import { useHistory } from 'react-router-dom';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { useAuthState } from "react-firebase-hooks/auth";
 
-
 export default function Loginpage({githubSignIn}){
 
   const [username,setUserName] = useState("");
   const[user]= useAuthState(auth);
-var provider = new firebase.auth.GithubAuthProvider();
-
-const history = useHistory();
+  var provider = new firebase.auth.GithubAuthProvider();
+  const history = useHistory();
 
   return(
     <>
