@@ -32,22 +32,19 @@ export default function DetailPage(props) {
   return(
     <>
    <Navbar 
-     username={username}
-     userpic={userpic}
-    />
-    
-    <div className="repo_full_name">
-      <h3>{repoFullName}</h3>
-    </div>
-
-    <h2 className = "repo_main_name">{repoName}</h2>
-  
-    <h5 className="repos_description">Description: {description}</h5>
-     <div className="repos_link">
-    <LinkIcon/> 
-    <a href={repoUrl} target="_blank">{repoUrl}</a>
-    </div>
-    <h5 className="repos_date" >created_at:  {new Date(date).toLocaleString()}</h5>
-    </>
+   username={username}
+   userpic={userpic}
+   />
+<div className="repo_full_name">
+   <h3>{repoFullName}</h3>
+</div>
+<h2 className = "repo_main_name">{repoName}</h2>
+<h5 className="repos_description">Description: {description}</h5>
+<div className="repos_link">
+   <LinkIcon/>
+   <a href={repoUrl} target="_blank">{repoUrl}</a>
+</div>
+<h5 className="repos_date" >created_at:  {new Date(date).toLocaleString()}</h5>
+</>
   )
 }
