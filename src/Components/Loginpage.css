@@ -17,13 +17,13 @@
   align-items: center;
   justify-content: center;
 }
-
 .page_name {
   color: brown;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .Login_page {
   width: 100%;
   height: 500px;
@@ -35,3 +35,9 @@
   font-size: 22px !important;
   align-items: center;
 }
+
+@media screen  and (max-width: 480px){
+.page_name {
+  font-size:14px;
+}
+  }
