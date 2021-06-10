@@ -27,6 +27,8 @@ link {
 }
 .repo_top_header{
   display: flex;
+  margin:12px;
+  font-size: 12px;
   align-items: center;
   justify-content: center;
 }
