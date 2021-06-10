@@ -4,11 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LoginPage from './Components/Loginpage';
 import Homepage from './Components/homepage/Homepage';
 import DetailPage from './Components/DetailsPage/DetailPage';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from './Firebase/config';
 
 export default function App() {
-  const [user] = useAuthState(auth);
+  
   return (
     <>
       <Router>
