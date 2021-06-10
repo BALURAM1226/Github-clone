@@ -6,7 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { useAuthState } from "react-firebase-hooks/auth";
 
 
-export default function React({githubSignIn}){
+export default function Loginpage({githubSignIn}){
 
   const [username,setUserName] = useState("");
   const[user]= useAuthState(auth);
