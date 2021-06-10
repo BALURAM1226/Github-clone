@@ -1,5 +1,4 @@
 import React,{useState, useEffect} from 'react';
-import './Homepage.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ReposData from '../reposData/ReposData';
 import firebase, {auth} from "../../Firebase/config";
