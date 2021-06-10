@@ -11,7 +11,7 @@ export default function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/repo/:repoId">
+          <Route exact path="/repo/:user/:repoId">
             <DetailPage />
           </Route>
           <Route exact path="/login">

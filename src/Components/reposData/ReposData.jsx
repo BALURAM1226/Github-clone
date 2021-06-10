@@ -51,10 +51,11 @@ export default function ReposData(props){
   </div>
   {
        user && apiData.map((result)=>{
+        
          return(
            <>
            <div key={result.id} className="repo_container">
-            <Link to={`/repo/${result.name}`} style={{ textDecoration: 'none' }} >
+            <Link to={`/repo/${result.owner.login}/${result.name}`} style={{ textDecoration: 'none' }} >
               <div className="repo_info">        
                 <h3 className="repo_name">{result.name}</h3>
                 <p className="repo_description">{result.description}</p>

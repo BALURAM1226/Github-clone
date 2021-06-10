@@ -16,12 +16,11 @@ export default function DetailPage(props) {
   const [repoFullName, setRepoFullName] = useState("")
   const [repoName,setRepoName] = useState("")
   const [date,setDate] = useState("")
-  const {repoId} = useParams();
+  const {repoId,user} = useParams();
 
   React.useEffect(async () => {
-    const result = await axios.get(`https://api.github.com/repos/BALURAM1226/${repoId}`);
+    const result = await axios.get(`https://api.github.com/repos/${user}/${repoId}`);
     const {data} = result;
-    console.log(data)
     setRepoFullName(data.full_name);
     setDescription(data.description);
     setUserpic(data.owner.avatar_url);
