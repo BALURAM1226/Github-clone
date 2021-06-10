@@ -1,9 +1,7 @@
 import React from 'react';
 import './style.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import SignOut from './Components/SignOut';
 import LoginPage from './Components/Loginpage';
-
 import Homepage from './Components/homepage/Homepage';
 import DetailPage from './Components/DetailsPage/DetailPage';
 import { useAuthState } from 'react-firebase-hooks/auth';
