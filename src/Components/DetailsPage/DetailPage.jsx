@@ -1,7 +1,5 @@
 import React ,{useState} from 'react';
 import {useParams} from "react-router-dom";
-import {auth} from "../../Firebase/config"
-import { useAuthState } from "react-firebase-hooks/auth";
 import axios from "axios"
 import Navbar from '../homepage/Navbar';
 import './DetailPage.css';
