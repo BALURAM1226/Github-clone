@@ -1,27 +1,20 @@
 import React from 'react';
-import './style.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import LoginPage from './Components/Loginpage';
-import Homepage from './Components/homepage/Homepage';
-import DetailPage from './Components/DetailsPage/DetailPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './styles/index.css';
+import HomePage from './pages/HomePage';
+import RepoDetailsPage from './pages/RepoDetailsPage';
+import LoginPage from './pages/LoginPage';
 
 export default function App() {
-  
   return (
-    <>
-      <Router>
-        <Switch>
-          <Route exact path="/repo/:user/:repoId">
-            <DetailPage />
-          </Route>
-          <Route exact path="/login">
-            <LoginPage />
-          </Route>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-        </Switch>
-      </Router>
-    </>
+    <Router>
+      <div className="bg-github-dark min-h-screen text-github-text font-sans">
+        <Routes>
+          <Route path="/repo/:user/:repoId" element={<RepoDetailsPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
